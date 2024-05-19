@@ -1,0 +1,3 @@
+freemarker:
+  settings:
+    classic_compatible: true
