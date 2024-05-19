@@ -21,7 +21,7 @@ public class FreeMarkRecordMapper {
                 		<doc name="C.ASM" stone="${C_ASM}">HELLO</doc>
                 	</doclist>
                 </cad>
-                
+                                
                 """).build();
     }
 }
