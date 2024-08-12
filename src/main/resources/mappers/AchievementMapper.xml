@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.lgp.mapper.AchievementMapper">
+
+    <insert id="insertBatch" parameterType="java.util.List">
+        INSERT INTO achievement
+        (uid,chinese,mathematics,english,sum)
+        VALUES
+        <foreach collection="list" close="" index="index" item="item" open="" separator=",">
+            (#{item.uid},#{item.chinese},#{item.mathematics},#{item.english},#{item.sum})
+        </foreach>
+    </insert>
+</mapper>
+
